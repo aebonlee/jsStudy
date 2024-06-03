@@ -1,0 +1,138 @@
+::selection {
+  background-color: #f26d7d;
+  color: #fff; }
+
+.text-main-pink {
+  color: #f26d7d; }
+
+.text-main-black {
+  color: #333; }
+
+.text-main-gray {
+  color: #6d6d6d; }
+
+.bg-main-pink {
+  background-color: #f26d7d; }
+
+header .container .row .col .resume-title-img {
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/profile.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%; }
+  @media screen and (max-width: 768px) {
+    header .container .row .col .resume-title-img {
+      width: 250px;
+      height: 250px; } }
+header .container .row .col h1 {
+  font-weight: 700;
+  font-size: 3rem; }
+header .container .row .col h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+section.container .row.resume-skill .col .progress {
+  font-weight: 700;
+  letter-spacing: 2px; }
+  section.container .row.resume-skill .col .progress .progress-html, section.container .row.resume-skill .col .progress .progress-css {
+    width: 90%; }
+  section.container .row.resume-skill .col .progress .progress-js, section.container .row.resume-skill .col .progress .progress-jq {
+    width: 75%; }
+  section.container .row.resume-skill .col .progress .progress-vue {
+    width: 50%; }
+@media screen and (max-width: 768px) {
+  section.container .row.resume-skill .col {
+    flex-basis: 100%;
+    max-width: 100%; } }
+section.container .row .col-md-6.resume-information-license .table-responsive .table tr th, section.container .row .col-md-6.resume-information-education .table-responsive .table tr th, section.container .row .col-md-6.resume-information-career .table-responsive .table tr th, section.container .row .col-md-12.resume-information-license .table-responsive .table tr th, section.container .row .col-md-12.resume-information-education .table-responsive .table tr th, section.container .row .col-md-12.resume-information-career .table-responsive .table tr th, section.container .row .col.resume-information-license .table-responsive .table tr th, section.container .row .col.resume-information-education .table-responsive .table tr th, section.container .row .col.resume-information-career .table-responsive .table tr th {
+  width: 25%;
+  word-break: break-all; }
+section.container .row .col-md-6 h2 span, section.container .row .col-md-12 h2 span, section.container .row .col h2 span {
+  font-weight: 500;
+  font-size: 1rem; }
+section.container .row .col-md-6 h3, section.container .row .col-md-12 h3, section.container .row .col h3 {
+  font-size: 1rem; }
+section.container .row .col-md-6 #licenseModalShow, section.container .row .col-md-6 #careerModalShow, section.container .row .col-md-12 #licenseModalShow, section.container .row .col-md-12 #careerModalShow, section.container .row .col #licenseModalShow, section.container .row .col #careerModalShow {
+  display: none; }
+  section.container .row .col-md-6 #licenseModalShow.show, section.container .row .col-md-6 #careerModalShow.show, section.container .row .col-md-12 #licenseModalShow.show, section.container .row .col-md-12 #careerModalShow.show, section.container .row .col #licenseModalShow.show, section.container .row .col #careerModalShow.show {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  section.container .row .col-md-6 #licenseModalShow .licenseModalContent, section.container .row .col-md-6 #licenseModalShow .careerModalContent, section.container .row .col-md-6 #careerModalShow .licenseModalContent, section.container .row .col-md-6 #careerModalShow .careerModalContent, section.container .row .col-md-12 #licenseModalShow .licenseModalContent, section.container .row .col-md-12 #licenseModalShow .careerModalContent, section.container .row .col-md-12 #careerModalShow .licenseModalContent, section.container .row .col-md-12 #careerModalShow .careerModalContent, section.container .row .col #licenseModalShow .licenseModalContent, section.container .row .col #licenseModalShow .careerModalContent, section.container .row .col #careerModalShow .licenseModalContent, section.container .row .col #careerModalShow .careerModalContent {
+    overflow: auto;
+    position: fixed;
+    z-index: 150;
+    left: 50%;
+    top: 50%;
+    width: 40vw;
+    height: 60vh;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    section.container .row .col-md-6 #licenseModalShow .licenseModalContent button, section.container .row .col-md-6 #licenseModalShow .careerModalContent button, section.container .row .col-md-6 #careerModalShow .licenseModalContent button, section.container .row .col-md-6 #careerModalShow .careerModalContent button, section.container .row .col-md-12 #licenseModalShow .licenseModalContent button, section.container .row .col-md-12 #licenseModalShow .careerModalContent button, section.container .row .col-md-12 #careerModalShow .licenseModalContent button, section.container .row .col-md-12 #careerModalShow .careerModalContent button, section.container .row .col #licenseModalShow .licenseModalContent button, section.container .row .col #licenseModalShow .careerModalContent button, section.container .row .col #careerModalShow .licenseModalContent button, section.container .row .col #careerModalShow .careerModalContent button {
+      position: absolute;
+      right: 2rem;
+      margin-bottom: 2rem; }
+    @media screen and (max-width: 768px) {
+      section.container .row .col-md-6 #licenseModalShow .licenseModalContent, section.container .row .col-md-6 #licenseModalShow .careerModalContent, section.container .row .col-md-6 #careerModalShow .licenseModalContent, section.container .row .col-md-6 #careerModalShow .careerModalContent, section.container .row .col-md-12 #licenseModalShow .licenseModalContent, section.container .row .col-md-12 #licenseModalShow .careerModalContent, section.container .row .col-md-12 #careerModalShow .licenseModalContent, section.container .row .col-md-12 #careerModalShow .careerModalContent, section.container .row .col #licenseModalShow .licenseModalContent, section.container .row .col #licenseModalShow .careerModalContent, section.container .row .col #careerModalShow .licenseModalContent, section.container .row .col #careerModalShow .careerModalContent {
+        width: 85vw;
+        height: 60vh; }
+        section.container .row .col-md-6 #licenseModalShow .licenseModalContent table th, section.container .row .col-md-6 #licenseModalShow .licenseModalContent table td, section.container .row .col-md-6 #licenseModalShow .careerModalContent table th, section.container .row .col-md-6 #licenseModalShow .careerModalContent table td, section.container .row .col-md-6 #careerModalShow .licenseModalContent table th, section.container .row .col-md-6 #careerModalShow .licenseModalContent table td, section.container .row .col-md-6 #careerModalShow .careerModalContent table th, section.container .row .col-md-6 #careerModalShow .careerModalContent table td, section.container .row .col-md-12 #licenseModalShow .licenseModalContent table th, section.container .row .col-md-12 #licenseModalShow .licenseModalContent table td, section.container .row .col-md-12 #licenseModalShow .careerModalContent table th, section.container .row .col-md-12 #licenseModalShow .careerModalContent table td, section.container .row .col-md-12 #careerModalShow .licenseModalContent table th, section.container .row .col-md-12 #careerModalShow .licenseModalContent table td, section.container .row .col-md-12 #careerModalShow .careerModalContent table th, section.container .row .col-md-12 #careerModalShow .careerModalContent table td, section.container .row .col #licenseModalShow .licenseModalContent table th, section.container .row .col #licenseModalShow .licenseModalContent table td, section.container .row .col #licenseModalShow .careerModalContent table th, section.container .row .col #licenseModalShow .careerModalContent table td, section.container .row .col #careerModalShow .licenseModalContent table th, section.container .row .col #careerModalShow .licenseModalContent table td, section.container .row .col #careerModalShow .careerModalContent table th, section.container .row .col #careerModalShow .careerModalContent table td {
+          font-size: 0.7rem; } }
+section.container .row .col-md-6 .table-responsive .table tr th, section.container .row .col-md-12 .table-responsive .table tr th, section.container .row .col .table-responsive .table tr th {
+  background-color: whitesmoke;
+  letter-spacing: 1px; }
+section.container .row .col-md-6 .table-responsive .table tr td, section.container .row .col-md-12 .table-responsive .table tr td, section.container .row .col .table-responsive .table tr td {
+  color: #6d6d6d; }
+  section.container .row .col-md-6 .table-responsive .table tr td .badge, section.container .row .col-md-12 .table-responsive .table tr td .badge, section.container .row .col .table-responsive .table tr td .badge {
+    font-weight: 500; }
+  section.container .row .col-md-6 .table-responsive .table tr td a, section.container .row .col-md-12 .table-responsive .table tr td a, section.container .row .col .table-responsive .table tr td a {
+    display: inline-block;
+    color: #6d6d6d;
+    transition: all 0.2s ease-in-out; }
+    section.container .row .col-md-6 .table-responsive .table tr td a .resume-icon, section.container .row .col-md-12 .table-responsive .table tr td a .resume-icon, section.container .row .col .table-responsive .table tr td a .resume-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all 0.2s ease-in-out; }
+      section.container .row .col-md-6 .table-responsive .table tr td a .resume-icon.resume-icon-git, section.container .row .col-md-12 .table-responsive .table tr td a .resume-icon.resume-icon-git, section.container .row .col .table-responsive .table tr td a .resume-icon.resume-icon-git {
+        background-image: url(../images/icon_git_off.png); }
+      section.container .row .col-md-6 .table-responsive .table tr td a .resume-icon.resume-icon-portfolio, section.container .row .col-md-12 .table-responsive .table tr td a .resume-icon.resume-icon-portfolio, section.container .row .col .table-responsive .table tr td a .resume-icon.resume-icon-portfolio {
+        background-image: url(../images/icon_site_off.png); }
+    section.container .row .col-md-6 .table-responsive .table tr td a:hover, section.container .row .col-md-12 .table-responsive .table tr td a:hover, section.container .row .col .table-responsive .table tr td a:hover {
+      color: #f26d7d; }
+      section.container .row .col-md-6 .table-responsive .table tr td a:hover .resume-icon-git, section.container .row .col-md-12 .table-responsive .table tr td a:hover .resume-icon-git, section.container .row .col .table-responsive .table tr td a:hover .resume-icon-git {
+        background-image: url(../images/icon_git_on.png); }
+      section.container .row .col-md-6 .table-responsive .table tr td a:hover .resume-icon-portfolio, section.container .row .col-md-12 .table-responsive .table tr td a:hover .resume-icon-portfolio, section.container .row .col .table-responsive .table tr td a:hover .resume-icon-portfolio {
+        background-image: url(../images/icon_site_on.png); }
+@media screen and (max-width: 768px) {
+  section.container .row .col-md-6 h2, section.container .row .col-md-12 h2, section.container .row .col h2 {
+    font-size: 1.6rem; }
+  section.container .row .col-md-6 .table-responsive .table tr td, section.container .row .col-md-6 .table-responsive .table tr th, section.container .row .col-md-12 .table-responsive .table tr td, section.container .row .col-md-12 .table-responsive .table tr th, section.container .row .col .table-responsive .table tr td, section.container .row .col .table-responsive .table tr th {
+    font-size: 0.8rem; } }
+
+footer .container .row .col-md-12 ul li a {
+  font-size: 0.8rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out; }
+  footer .container .row .col-md-12 ul li a:hover, footer .container .row .col-md-12 ul li a:focus, footer .container .row .col-md-12 ul li a:active {
+    color: #6d6d6d; }
+
+/*# sourceMappingURL=style.css.map */

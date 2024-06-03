@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트를 활용한 계산기</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+<body>
+<div class="container-fluid m-auto">
+  <header class="cotainer">
+    <div class="row">
+      <h1 class="col p-5 font-weight-bold text-center">계산기</h1>
+    </div>
+  </header><!-- end of header -->
+
+  <section class="container">
+    <div class="row mb-3">
+      <div class="col column">
+        <input type="text" id="display" class="col-12 p-2">
+        <input type="text" id="result" class="col-12 p-2">
+      </div>
+    </div><!-- end of 입력/출력 공간 -->
+
+    <div class="row mb-2">
+      <div class="col-12 row m-0">
+        <button class="col mr-2 py-2 rounded bg-dark text-white" onclick="addOutput('%')">%</button>
+        <button class="col mr-2 py-2 rounded bg-dark text-white" onclick="reset()">C</button>
+        <button class="col mr-2 py-2 rounded bg-dark text-white" onclick="del()">del</button>
+        <button class="col py-2 rounded bg-dark text-white" onclick="addOutput('/')">/</button>
+      </div>
+      
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-12 row m-0">
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('1')">1</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('2')">2</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('3')">3</button>
+        <button class="col py-2 rounded bg-dark text-white" onclick="addOutput('*')">*</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-12 row m-0">
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('4')">4</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('5')">5</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('6')">6</button>
+        <button class="col py-2 rounded bg-dark text-white" onclick="addOutput('+')">+</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-12 row m-0">
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('7')">7</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('8')">8</button>
+        <button class="col mr-2 py-2 rounded" onclick="addOutput('9')">9</button>
+        <button class="col py-2 rounded bg-dark text-white" onclick="addOutput('-')">-</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-12 row m-0">
+          <button class="col mr-2 py-2 rounded" onclick="addOutput('0')">0</button>
+          <button class="col mr-2 py-2 rounded" onclick="addOutput('.')">.</button>
+          <button class="col py-2 px-5 rounded bg-dark text-white" onclick="calculate()">=</button>
+        </div>
+    </div>
+  </section>
+  <!-- end of section -->
+  
+  <footer class="container mt-3">
+    <div class="row m-auto">
+      <address class="col text-black-50 text-center">2020 &copy; kim-ji-min</address>
+    </div>
+  </footer>
+  <!-- end of footer -->
+</div>
+
+<script src="js/function.js"></script>
+</body>
+</html>

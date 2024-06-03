@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="https://kim-ji-min.github.io/My-Portfolio/images/contact_banner.jpg">
+    <meta property="og:description" content="개발면접을 위한 웹사이트 형식의 개인 이력서 입니다.">
+    <meta property="og:title" content="김지민 이력서">
+    <meta name="author" content="김지민">
+    <meta name="description" content="개발면접을 위한 웹사이트 형식의 개인 이력서 입니다.">
+    <title>김지민 이력서</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- header -->
+        <header>
+            <div class="container p-3 border-bottom">
+                <div class="row resume-title">
+                    <div class="mt-5 col text-center text-main-pink">
+                        <div class="m-auto resume-title-img"></div>
+                        <h1 class="mt-3">김지민</h1>
+                        <h2>Kim,Ji-Min</h2>
+                        <p class="mt-3 text-main-gray">
+                            디자인하는 웹 퍼블리셔, 예비 프론트엔드 개발자
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+
+        <!-- section -->
+        <section class="container my-3">
+            <!-- resume-information-->
+            <div class="row resume-information">
+                <!-- resume-information-basic 기본정보 -->
+                <div class="col-md-6 resume-information-basic my-2">
+                    <h2 class="text-main-pink font-weight-bold p-3">기본 정보</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <caption>기본 정보 표</caption>
+                            <tr>
+                                <th scope="row">이름</th>
+                                <td>김지민</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">생년월일</th>
+                                <td>1994.09.23 (27세)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주소</th>
+                                <td>경기도 광명시 모세로 53 906-306</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">메일</th>
+                                <td>dimdee&commat;naver.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">연락처</th>
+                                <td>010-9965-5593</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사이트</th>
+                                <td>
+                                    <a href="https://github.com/Kim-Ji-Min" target="_blank">깃허브 <span class="resume-icon resume-icon-git ml-1"></span></a>,
+                                    <a href="https://kim-ji-min.github.io/My-Portfolio/" target="_blank">포트폴리오 사이트<span class="resume-icon resume-icon-portfolio ml-1"></span></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- resume-information-license 자격증/수상내역 -->
+                <div class="col-md-6 resume-information-license my-2">
+                    <h2 class="text-main-pink font-weight-bold p-3">자격증/수상내역/대외활동</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <caption>자격증 정보표</caption>
+                            <tr>
+                                <th scope="row">취득일</th>
+                                <th scope="row">구분</th>
+                                <th scope="row">내용</th>
+                                <th scope="row">발행처/기관</th>
+                            </tr>
+                            <tr>
+                                <td>2019.09</td>
+                                <td>자격증</td>
+                                <td>웹디자인기능사</td>
+                                <td>한국산업인력공단</td>
+                            </tr>
+                            <tr>
+                                <td>2016.12</td>
+                                <td>자격증</td>
+                                <td>시각디자인산업기사</td>
+                                <td>한국산업인력공단</td>
+                            </tr>
+                            <tr>
+                                <td>2015.10</td>
+                                <td>자격증</td>
+                                <td>컴퓨터그래픽스운용기능사</td>
+                                <td>한국산업인력공단</td>
+                            </tr>
+                            <tr>
+                                <td>2015.09</td>
+                                <td>자격증</td>
+                                <td>GTQ 포토샵1급</td>
+                                <td>한국생산성본부</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4">
+                                    <button id="licenseModalOpen" class="btn btn-outline-secondary btn-block">수상내역/대외활동 보러가기 🏆<span class="badge badge-pill badge-secondary">9</span></button>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- modal -->
+                        <div id="licenseModalShow" class="">
+                           <div class="licenseModalContent p-4">
+                               <!-- 이수내역 -->
+                               <h2 class="text-main-pink font-weight-bold p-3">대외활동</h2>
+                               <div class="table-responsive">
+                                   <table class="table">
+                                       <caption>대외활동 정보표</caption>
+                                       <tr>
+                                           <th scope="row">기간</th>
+                                           <th scope="row">구분</th>
+                                           <th scope="row">기관/장소</th>
+                                           <th scope="row">내용</th>
+                                       </tr>
+                                       <tr>
+                                           <td>2019.06 - 2019.11</td>
+                                           <td>교육이수</td>
+                                           <td>이젠아카데미 신촌점</td>
+                                           <td>모바일 앱디자인(웹디자인)&하이브리드 앱 콘텐츠 제작, UI/GUI 디자인, 앱 개발 환경분석, UX/UI전략수립 / 서비스 운영 / 구현 / 구현 응용</td>
+                                       </tr>
+                                       <tr>
+                                           <td>2017.11- 2017.11</td>
+                                           <td>아르바이트</td>
+                                           <td>호원대학교</td>
+                                           <td>비즈니스학부 호텔외식조리학전공 홈페이지 제작 <a href="http://www.howon1.webtoz.co.kr/" target="_blank" class="badge badge-pill badge-secondary text-white">바로가기</a></td>
+                                       </tr>
+                                       <tr>
+                                           <td>2015.09  -2016.01</td>
+                                           <td>아르바이트</td>
+                                           <td>단데리온바이오팜</td>
+                                           <td>학교근로장학생으로 근무 - 웹디자인, 웹퍼블리싱, 편집 디자인, 제품 디자인 <a href="http://atti-v.com/" target="_blank" class="badge badge-pill badge-secondary text-white">바로가기</a></td>
+                                       </tr>
+                                       <tr>
+                                           <td>2015.03 - 2015.03</td>
+                                           <td>해외연수</td>
+                                           <td>창업진흥원</td>
+                                           <td>MIT GLOBAL STARTUP WORKSHOP</td>
+                                       </tr>
+                                   </table>
+                               </div>
+
+                               <!-- 수상내역 -->
+                               <h2 class="text-main-pink font-weight-bold p-3">수상내역</h2>
+                               <div class="table-responsive">
+                                   <table class="table">
+                                       <caption>수상내역 정보표</caption>
+                                       <tr>
+                                           <th scope="row">기간</th>
+                                           <th scope="row">구분</th>
+                                           <th scope="row">기관/장소</th>
+                                           <th scope="row">내용</th>
+                                       </tr>
+                                       <tr>
+                                           <td>2016.07</td>
+                                           <td>공모전</td>
+                                           <td>전라북도 미술대전 디자인부문 대상</td>
+                                           <td>(사)한국미술협회전라북도지회</td>
+                                       </tr>
+                                       <tr>
+                                           <td>2016.06</td>
+                                           <td>공모전</td>
+                                           <td>LG생활건강 디자인 공모전 패턴부문 입선</td>
+                                           <td>(사)한국브랜드디자인학회</td>
+                                       </tr>
+                                       <tr>
+                                           <td>2016.01</td>
+                                           <td>공모전</td>
+                                           <td>SOKI 국제 디자인&일러스트레이션 일러스트 부문 입선</td>
+                                           <td>(사)한국일러스아트학회</td>
+                                       </tr>
+                                       <tr>
+                                           <td>2014.12</td>
+                                           <td>공모전</td>
+                                           <td>청년드림 CEO 양성 캠프 최종경진대회 글로벌부문 입상</td>
+                                           <td>창업진흥원</td>
+                                       </tr>
+                                       <tr>
+                                           <td>2014.12</td>
+                                           <td>공모전</td>
+                                           <td>전라북도 산업디자인대전 디자인부문 은상</td>
+                                           <td>(사)전라북도산업디자이너협회</td>
+                                       </tr>
+                                   </table>
+                               </div>
+
+                               <button id="licenseModalClose" class="btn btn-outline-secondary font-weight-bold">닫기</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- resume-information-education 학력사항 -->
+                <div class="col-md-12 resume-information-education my-2">
+                    <h2 class="text-main-pink font-weight-bold p-3">학력사항 <span class="text-main-gray">최종학력 대학교(4년) 졸업</span></h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <caption>학력 정보표</caption>
+                            <tr>
+                                <th scope="row">재학기간</th>
+                                <th scope="row">학교명</th>
+                                <th scope="row">전공</th>
+                                <th scope="row">학점</th>
+                            </tr>
+                            <tr>
+                                <td>2014.03 - 2018.02</td>
+                                <td>호원대학교 <span class="badge badge-pill badge-secondary">졸업</span></td>
+                                <td>시각디자인</td>
+                                <td>4.45/4.5</td>
+                            </tr>
+                            <tr>
+                                <td>2010.03 - 2013.02</td>
+                                <td>호남제일고등학교 <span class="badge badge-pill badge-secondary">졸업</span></td>
+                                <td>문과계열</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- resume-information-career 경력사항 -->
+                <div class="col-md-12 resume-information-career my-2">
+                    <h2 class="text-main-pink font-weight-bold p-3">경력사항 <span class="text-main-gray">총 1년 6개월</span></h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <caption>경력사항 정보표</caption>
+                            <tr>
+                                <th scope="row">근무기간</th>
+                                <th scope="row">회사명</th>
+                                <th scope="row">직급/직무</th>
+                                <th scope="row">내용</th>
+                            </tr>
+                            <tr>
+                                <td>2019.12 - 2020.03</td>
+                                <td>켄코</td>
+                                <td>사원/웹 퍼블리싱</td>
+                                <td>
+                                    웹 디자인, 웹 퍼블리싱, 디자인 업무, 인프라 구축(aws)
+                                    <button id="careerModalOpen" class="btn badge badge-pill badge-secondary text-white">자세히 보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2018.03 - 2019.04</td>
+                                <td>엘가플러스</td>
+                                <td>사원/웹 디자인</td>
+                                <td>
+                                   웹 디자인, 자사몰 웹 퍼블리싱, 촬영기획, 디자인 업무
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2019.05 - 202020.04</td>
+                                <td>외주/프리랜서</td>
+                                <td>디자인</td>
+                                <td>
+                                    퇴사자 리콜 프리랜서 : 모델컷(270컷), 사진 작업 등
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- modal -->
+                        <div id="careerModalShow" class="">
+                            <div class="careerModalContent p-4">
+                                <h2 class="text-main-pink font-weight-bold p-3">이전 작업물</h2>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <caption>경력사항 기술표</caption>
+                                        <tr>
+                                            <th scope="row">프로젝트명</th>
+                                            <th scope="row">기간</th>
+                                            <th scope="row">참여율</th>
+                                            <th scope="row">내용</th>
+                                        </tr>
+                                        <tr>
+                                            <td>심플치과</td>
+                                            <td>2020.02 - 2020.03</td>
+                                            <td>50%</td>
+                                            <td>웹디자인(초안), 웹퍼블리싱(초안), svg-animate, 인프라 구축 <a href="http://dev.simpledental.kr" target="_blank" class="badge badge-pill badge-secondary text-white">바로가기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>펫트리온</td>
+                                            <td>2020.02 - 2020.03</td>
+                                            <td>80%</td>
+                                            <td>웹디자인, 웹퍼블리싱, TweenMax, svg-animate, 인프라 구축<a href="http://www.handongpet.co.kr" target="_blank" class="badge badge-pill badge-secondary text-white">바로가기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>비포덴트</td>
+                                            <td>2020.01 - 2020.03</td>
+                                            <td>30%</td>
+                                            <td>svg-animate, 브로슈어, 마케팅 이미지 제작 <a href="http://www.alinenow.com" target="_blank" class="badge badge-pill badge-secondary text-white">바로가기</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <button id="careerModalClose" class="btn btn-outline-secondary font-weight-bold">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of row.resume-information-->
+
+            <!-- resume-skill 능력치 -->
+            <div class="row mb-5 resume-skill">
+                <div class="col-md-12 mb-3">
+                    <h2 class="text-main-pink font-weight-bold p-3 border-bottom">능력치</h2>
+                </div>
+                <div class="col">
+                    <h3 class="p-2 text-main-gray">HTML5</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-html bg-main-pink" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="p-2 text-main-gray">CSS3/SCSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-css bg-main-pink" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="p-2 text-main-gray">Javascript</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-js bg-main-pink" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="p-2 text-main-gray">Jquery</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-jq bg-main-pink" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="p-2 text-main-gray">Vuejs</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-vue bg-main-pink" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- footer -->
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="row text-white text-center p-5">
+                    <div class="col-md-12 footer-nav">
+                        <ul class="d-flex" style="justify-content: center">
+                            <li class="m-2">
+                                <a href="https://github.com/Kim-Ji-Min" target="_blank">Github</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="https://www.rocketpunch.com/@today_jimin#" target="_blank">Rocketpunch</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="https://kim-ji-min.github.io/My-Portfolio/" target="_blank">Portfolio</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="images/kimjimin_resume.pdf" download="kimjimin_resume">이력서 PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+                        <address>
+                            &copy; 2020 Kim, Ji-Min. All Rights Reserved.
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+     <script src="js/modal.js"></script>
+</body>
+</html>

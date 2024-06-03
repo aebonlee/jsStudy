@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+//color default
+$main-pink: #f26d7d;
+$main-black: #333;
+$main-gray: #6d6d6d;
+
+::selection{
+  background-color: #f26d7d;
+  color: #fff;
+}
+
+.text-main-pink{
+  color: $main-pink;
+}
+
+.text-main-black{
+  color: $main-black;
+}
+
+.text-main-gray{
+  color: $main-gray;
+}
+
+.bg-main-pink{
+  background-color: $main-pink;
+}
+
+//header
+header{
+  .container{
+    .row{
+      .col{
+        .resume-title-img{
+          width: 300px;
+          height: 300px;
+          background-image: url(../images/profile.jpg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          @media screen and (max-width:768px){
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        h1{
+          font-weight: 700;
+          font-size: 3rem;
+        }
+
+        h2{
+          font-size: 1rem;
+          font-weight: 400;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+//section
+section.container{
+  .row{
+    //능력치
+    &.resume-skill{
+      .col{
+        .progress{
+          font-weight: 700;
+          letter-spacing: 2px;
+          .progress-html,.progress-css{
+            width: 90%;
+          }
+          .progress-js, .progress-jq{
+            width: 75%;
+          }
+          .progress-vue{
+            width: 50%;
+          }
+        }
+        @media screen and (max-width: 768px){
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        }
+      }
+
+    //기본사항, 자격증/수상내역, 학력사항, 경력사항
+    .col-md-6, .col-md-12, .col{
+      &.resume-information-license, &.resume-information-education, &.resume-information-career{
+        .table-responsive {
+          .table {
+            tr {
+              th {
+                width: 25%;
+                word-break: break-all;
+              }
+            }
+          }
+        }
+      }
+
+      h2{
+        span{
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+
+      h3{
+        font-size: 1rem;
+      }
+
+      #licenseModalShow, #careerModalShow{
+        display: none;
+
+        &.show{
+          display: block;
+          position: fixed;
+          z-index: 100;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.5);
+        }
+
+        .licenseModalContent, .careerModalContent{
+          overflow: auto;
+          position: fixed;
+          z-index: 150;
+          left: 50%;
+          top: 50%;
+          width: 40vw;
+          height: 60vh;
+          background-color: #fff;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          button{
+            position: absolute;
+            right: 2rem;
+            margin-bottom: 2rem;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 85vw;
+            height: 60vh;
+            table{
+              th,td{
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+
+      .table-responsive{
+        .table{
+          tr{
+            th{
+              background-color: rgb(245,245,245);
+              letter-spacing: 1px;
+            }
+
+            td{
+              color: $main-gray;
+              .badge{
+                font-weight: 500;
+              }
+
+              a{
+                display: inline-block;
+                color: $main-gray;
+                transition: all 0.2s ease-in-out;
+                .resume-icon{
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  vertical-align: middle;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  transition: all 0.2s ease-in-out;
+                  &.resume-icon-git{
+                    background-image: url(../images/icon_git_off.png);
+                  }
+                  &.resume-icon-portfolio{
+                    background-image: url(../images/icon_site_off.png);
+                  }
+                }
+
+                &:hover{
+                  color: $main-pink;
+                  .resume-icon-git{
+                    background-image: url(../images/icon_git_on.png);
+                  }
+                  .resume-icon-portfolio{
+                    background-image: url(../images/icon_site_on.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width:768px){
+        h2{
+          font-size: 1.6rem;
+        }
+
+        .table-responsive {
+          .table {
+            tr {
+              td, th{
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//footer
+footer{
+  .container{
+    .row{
+      .col-md-12{
+        ul{
+          li{
+            a{
+              font-size: 0.8rem;
+              color: #fff;
+              transition: all 0.2s ease-in-out;
+              &:hover, &:focus, &:active{
+                color: $main-gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
